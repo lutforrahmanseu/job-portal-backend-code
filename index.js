@@ -22,12 +22,10 @@ app.use(cors(corsOptions));
 const PORT = process.env.PORT || 5000;
 
 //api'connect
-app.use('/api/v1/user',userRoute)
-app.use('/api/v1/company',companyRoute)
+app.use("/api/v1/user", userRoute);
+app.use("/api/v1/company", companyRoute);
 
 app.listen(PORT, () => {
   connectDB();
   console.log(`Server started on port ${PORT}`);
 });
-
-
