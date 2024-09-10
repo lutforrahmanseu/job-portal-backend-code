@@ -28,6 +28,7 @@ const userSchema = new mongoose.Schema(
       },
       skills: {
         type: String,
+        
       },
       resume: {
         type: String,
